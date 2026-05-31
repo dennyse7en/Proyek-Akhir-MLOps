@@ -27,6 +27,8 @@ mlflow.set_tracking_uri("sqlite:///mlflow.db")
 # Mengatur nama eksperimen di MLflow
 mlflow.set_experiment("Eksperimen_Heart_Disease")
 
+mlflow.sklearn.autolog()
+
 # Memulai run MLflow
 with mlflow.start_run(run_name="RandomForest_Tuning"):
     print("Melatih model dan melakukan Hyperparameter Tuning...")

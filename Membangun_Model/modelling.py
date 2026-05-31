@@ -20,12 +20,15 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+
 # 3. Setup MLflow
 # Memaksa MLflow menggunakan database SQLite agar tidak tersasar di Windows
 mlflow.set_tracking_uri("sqlite:///mlflow.db") 
 
 # Mengatur nama eksperimen di MLflow
 mlflow.set_experiment("Eksperimen_Heart_Disease")
+
+mlflow.sklearn.autolog()
 
 # Memulai run MLflow
 with mlflow.start_run(run_name="RandomForest_Tuning"):
