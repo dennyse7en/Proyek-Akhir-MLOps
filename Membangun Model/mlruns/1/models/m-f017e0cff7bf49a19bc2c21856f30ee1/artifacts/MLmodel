@@ -1,0 +1,24 @@
+artifact_path: /Users/denny/Documents/Dicoding/SMSML_Denny Imam Setianto/Membangun
+  Model/mlruns/1/models/m-f017e0cff7bf49a19bc2c21856f30ee1/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.20
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-f017e0cff7bf49a19bc2c21856f30ee1
+model_size_bytes: 1209979
+model_uuid: m-f017e0cff7bf49a19bc2c21856f30ee1
+prompts: null
+run_id: 8c06f9e5d91e4408ab3607f63ea68bb2
+utc_time_created: '2026-05-31 05:01:40.340700'
