@@ -31,11 +31,11 @@ X_test_scaled = scaler.transform(X_test)
 # 3. SETUP MLFLOW TRACKING
 # ==========================================
 # Menggunakan database SQLite lokal sesuai standar proyek Anda
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
-mlflow.set_experiment("Eksperimen_Heart_Disease_Baseline")
+# mlflow.set_tracking_uri("sqlite:///mlflow.db")
+# mlflow.set_experiment("Eksperimen_Heart_Disease_Baseline")
 
 # ==========================================
-# 4. REVISI UTAMA: AUTOLOG & TRAINING MODEL
+# 4. AUTOLOG & TRAINING MODEL
 # ==========================================
 # WAJIB: Aktifkan autolog tepat SEBELUM mlflow.start_run()
 # Fungsi ini otomatis mencatat semua parameter, metrik (akurasi, dll), dan model artifact
