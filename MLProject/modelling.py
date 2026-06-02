@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 # ==========================================
 print("Memuat data...")
 # Pastikan file heart.csv berada di folder yang sama saat mengeksekusi script ini
-df = pd.read_csv('heart.csv')
+df = pd.read_csv('heart_preprocessed.csv')
 
 X = df.drop('target', axis=1)
 y = df['target']

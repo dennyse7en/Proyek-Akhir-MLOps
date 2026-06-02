@@ -1,0 +1,29 @@
+artifact_path: /Users/denny/Documents/Dicoding/SMSML_Denny Imam Setianto/MLProject/mlruns/1/models/m-6af4ec204502412490d2e21965c6ee7b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.20
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-6af4ec204502412490d2e21965c6ee7b
+model_size_bytes: 686874
+model_uuid: m-6af4ec204502412490d2e21965c6ee7b
+prompts: null
+run_id: 92036785aadc4143a88367337cb4459e
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 13]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-02 15:18:00.180435'
