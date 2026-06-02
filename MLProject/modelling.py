@@ -24,13 +24,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 # 2. SETUP MLFLOW TRACKING
 # ==========================================
 # MATIKAN DUA BARIS INI UNTUK GITHUB ACTIONS (Sesuai perbaikan sebelumnya)
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
-mlflow.set_experiment("Eksperimen_Heart_Disease_Baseline")
+# mlflow.set_tracking_uri("sqlite:///mlflow.db")
+# mlflow.set_experiment("Eksperimen_Heart_Disease_Baseline")
 
 # ==========================================
 # 3. AUTOLOG & TRAINING MODEL
 # ==========================================
-mlflow.autolog()
+mlflow.sklearn.autolog()
 
 with mlflow.start_run(run_name="RandomForest_Baseline"):
     print("Melatih model dasar (TANPA Hyperparameter Tuning)...")
